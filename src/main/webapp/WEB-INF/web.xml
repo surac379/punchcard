@@ -7,6 +7,23 @@
 	
 	<!-- front controller -->
 	
-	
-	
+	<welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>punchcard</servlet-name>
+    <servlet-class>controllers.FrontController</servlet-class>
+   
+    </servlet>
+  <servlet-mapping>
+    <servlet-name>punchcard</servlet-name>
+    <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- to implement forward 
+  <servlet-mapping>
+    <servlet-name>punchcard2</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>	-->
+  
 	</web-app>
