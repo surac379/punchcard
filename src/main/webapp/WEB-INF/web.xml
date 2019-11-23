@@ -20,10 +20,6 @@
     <url-pattern>/servlet</url-pattern>
   </servlet-mapping>
   
-  <!-- to implement forward 
-  <servlet-mapping>
-    <servlet-name>punchcard2</servlet-name>
-    <url-pattern>/servlet2</url-pattern>
-  </servlet-mapping>	-->
+
   
 	</web-app>

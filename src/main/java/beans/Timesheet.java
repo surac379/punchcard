@@ -4,15 +4,41 @@ public class Timesheet {
 	
 	private int timesheeetID;
 	private int stautusID;
-	private float Mon_hrs;
-	private float Tues_hrs;
-	private float Wed_hrs;
-	private float Thurs_hrs;
-	private float Fri_hrs;
-	private float Sat_hrs;
-	private float Sun_hrs;
+	private float monHrs;
+	private float tuesHrs;
+	private float wedHrs;
+	private float thursHrs;
+	private float friHrs;
+	private float satHrs;
+	private float sunHrs;
 	private String weekendingDate; 
 	private String approvedDate;
+	private String status;
+	
+	
+	public Timesheet(int timesheeetID, float mon_hrs, float tues_hrs, float wed_hrs, float thurs_hrs, float fri_hrs,
+			float sat_hrs, float sun_hrs, String weekendingDate, String approvedDate, String status) {
+		super();
+		this.timesheeetID = timesheeetID;
+		monHrs = mon_hrs;
+		tuesHrs = tues_hrs;
+		wedHrs = wed_hrs;
+		thursHrs = thurs_hrs;
+		friHrs = fri_hrs;
+		satHrs = sat_hrs;
+		sunHrs = sun_hrs;
+		this.weekendingDate = weekendingDate;
+		this.approvedDate = approvedDate;
+		this.status = status;
+	}
+
+	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public int getTimesheeetID() {
 		return timesheeetID;
 	}
@@ -26,46 +52,46 @@ public class Timesheet {
 		this.stautusID = stautusID;
 	}
 	public float getMon_hrs() {
-		return Mon_hrs;
+		return monHrs;
 	}
 	public void setMon_hrs(float mon_hrs) {
-		Mon_hrs = mon_hrs;
+		monHrs = mon_hrs;
 	}
 	public float getTues_hrs() {
-		return Tues_hrs;
+		return tuesHrs;
 	}
 	public void setTues_hrs(float tues_hrs) {
-		Tues_hrs = tues_hrs;
+		tuesHrs = tues_hrs;
 	}
 	public float getWed_hrs() {
-		return Wed_hrs;
+		return wedHrs;
 	}
 	public void setWed_hrs(float wed_hrs) {
-		Wed_hrs = wed_hrs;
+		wedHrs = wed_hrs;
 	}
 	public float getThurs_hrs() {
-		return Thurs_hrs;
+		return thursHrs;
 	}
 	public void setThurs_hrs(float thurs_hrs) {
-		Thurs_hrs = thurs_hrs;
+		thursHrs = thurs_hrs;
 	}
 	public float getFri_hrs() {
-		return Fri_hrs;
+		return friHrs;
 	}
 	public void setFri_hrs(float fri_hrs) {
-		Fri_hrs = fri_hrs;
+		friHrs = fri_hrs;
 	}
 	public float getSat_hrs() {
-		return Sat_hrs;
+		return satHrs;
 	}
 	public void setSat_hrs(float sat_hrs) {
-		Sat_hrs = sat_hrs;
+		satHrs = sat_hrs;
 	}
 	public float getSun_hrs() {
-		return Sun_hrs;
+		return sunHrs;
 	}
 	public void setSun_hrs(float sun_hrs) {
-		Sun_hrs = sun_hrs;
+		sunHrs = sun_hrs;
 	}
 	public String getWeekendingDate() {
 		return weekendingDate;
@@ -84,13 +110,13 @@ public class Timesheet {
 		super();
 		this.timesheeetID = timesheeetID;
 		this.stautusID = stautusID;
-		Mon_hrs = mon_hrs;
-		Tues_hrs = tues_hrs;
-		Wed_hrs = wed_hrs;
-		Thurs_hrs = thurs_hrs;
-		Fri_hrs = fri_hrs;
-		Sat_hrs = sat_hrs;
-		Sun_hrs = sun_hrs;
+		monHrs = mon_hrs;
+		tuesHrs = tues_hrs;
+		wedHrs = wed_hrs;
+		thursHrs = thurs_hrs;
+		friHrs = fri_hrs;
+		satHrs = sat_hrs;
+		sunHrs = sun_hrs;
 		this.weekendingDate = weekendingDate;
 		this.approvedDate = approvedDate;
 	}
@@ -98,10 +124,16 @@ public class Timesheet {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
+
 	@Override
 	public String toString() {
-		return "Timesheet [timesheeetID=" + timesheeetID + ", stautusID=" + stautusID + ", weekendingDate="
-				+ weekendingDate + "]";
+		return "Timesheet [timesheeetID=" + timesheeetID + ", monHrs=" + monHrs + ", tuesHrs=" + tuesHrs + ", wedHrs="
+				+ wedHrs + ", thursHrs=" + thursHrs + ", friHrs=" + friHrs + ", satHrs=" + satHrs + ", sunHrs=" + sunHrs
+				+ ", weekendingDate=" + weekendingDate + ", status=" + status + "]";
 	}
+	
+	
+	
 	
 }

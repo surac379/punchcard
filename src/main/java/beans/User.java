@@ -2,8 +2,8 @@ package beans;
 
 public class User {
 	private int id;
-	private String f_name;
-	private String l_name;
+	private String fName;
+	private String lName;
 	private String userName;
 	private String password;
 	private String jobTitle;
@@ -15,16 +15,16 @@ public class User {
 		this.id = id;
 	}
 	public String getF_name() {
-		return f_name;
+		return fName;
 	}
 	public void setF_name(String f_name) {
-		this.f_name = f_name;
+		this.fName = f_name;
 	}
 	public String getL_name() {
-		return l_name;
+		return lName;
 	}
 	public void setL_name(String l_name) {
-		this.l_name = l_name;
+		this.lName = l_name;
 	}
 	public String getUserName() {
 		return userName;
@@ -52,7 +52,7 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [f_name=" + f_name + ", l_name=" + l_name + ", role=" + role + "]";
+		return "User [f_name=" + fName + ", l_name=" + lName + ", role=" + role + "]";
 	}
 	public User() {
 		super();
@@ -60,8 +60,18 @@ public class User {
 	}
 	public User(String f_name, String l_name, String userName, String password, String jobTitle, String role) {
 		super();
-		this.f_name = f_name;
-		this.l_name = l_name;
+		this.fName = f_name;
+		this.lName = l_name;
+		this.userName = userName;
+		this.password = password;
+		this.jobTitle = jobTitle;
+		this.role = role;
+	}
+	public User(int id, String fName, String lName, String userName, String password, String jobTitle, String role) {
+		super();
+		this.id = id;
+		this.fName = fName;
+		this.lName = lName;
 		this.userName = userName;
 		this.password = password;
 		this.jobTitle = jobTitle;
