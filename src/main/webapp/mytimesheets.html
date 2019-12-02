@@ -4,11 +4,19 @@
 <meta charset="ISO-8859-1">
 <title>My Timesheets</title>
 </head>
+<style> td {
+width:5%;text-align: center;
+}
+input {
+width:80%;
+}
+</style>
 <body>
 	Hello Timesheets
 <br/> <br />
-	<form action="get" id="time">
-		<table id="list" border="bold">
+<button id="newItem"> insert new</button>
+	<form method ="get" action="/punchcard/servlet" id="time" >
+		<table id="list";>
 			<tr>
 				<td>Week</td>
 				<td>MonDay</td>
@@ -22,9 +30,8 @@
                 <td>Edit</td>
 			</tr>
 		</table>
-
-
 	</form>
 </body>
 <script type="text/javascript" src="pageload.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </html>

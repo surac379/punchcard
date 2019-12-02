@@ -21,5 +21,8 @@ public class UserService  {
 		return dao.findTimesheetsByUser(userId);
 	}
 	
+	public int InsertTimesheet(Timesheet timesheet, int userId) {
+		return dao.InsertTimesheet(timesheet, userId);
+	}
 	
 }

@@ -16,22 +16,7 @@ public class Timesheet {
 	private String status;
 	
 	
-	public Timesheet(int timesheeetID, float mon_hrs, float tues_hrs, float wed_hrs, float thurs_hrs, float fri_hrs,
-			float sat_hrs, float sun_hrs, String weekendingDate, String approvedDate, String status) {
-		super();
-		this.timesheeetID = timesheeetID;
-		monHrs = mon_hrs;
-		tuesHrs = tues_hrs;
-		wedHrs = wed_hrs;
-		thursHrs = thurs_hrs;
-		friHrs = fri_hrs;
-		satHrs = sat_hrs;
-		sunHrs = sun_hrs;
-		this.weekendingDate = weekendingDate;
-		this.approvedDate = approvedDate;
-		this.status = status;
-	}
-
+	
 	
 	public String getStatus() {
 		return status;
@@ -105,21 +90,8 @@ public class Timesheet {
 	public void setApprovedDate(String approvedDate) {
 		this.approvedDate = approvedDate;
 	}
-	public Timesheet(int timesheeetID, int stautusID, float mon_hrs, float tues_hrs, float wed_hrs, float thurs_hrs,
-			float fri_hrs, float sat_hrs, float sun_hrs, String weekendingDate, String approvedDate) {
-		super();
-		this.timesheeetID = timesheeetID;
-		this.stautusID = stautusID;
-		monHrs = mon_hrs;
-		tuesHrs = tues_hrs;
-		wedHrs = wed_hrs;
-		thursHrs = thurs_hrs;
-		friHrs = fri_hrs;
-		satHrs = sat_hrs;
-		sunHrs = sun_hrs;
-		this.weekendingDate = weekendingDate;
-		this.approvedDate = approvedDate;
-	}
+	
+	
 	public Timesheet() {
 		super();
 		// TODO Auto-generated constructor stub
